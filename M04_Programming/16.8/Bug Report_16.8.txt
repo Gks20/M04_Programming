@@ -1,0 +1,36 @@
+** Preconditions **
+
+- Line (4 Module 16.8)
+
+**Steps to Reproduce**
+
+- print the title column from the book table in alphabetical order.
+
+
+**Expected Results**
+
+-  ('Perdido Street Station',)
+   ('Small Gods',)
+   ('The Spellman Files',)
+   ('The Weirdstone of Brisingamen',)
+   ('Thud!',)
+
+**Actual Results**
+
+- AttributeError: 'Engine' object has no attribute 'execute'
+
+Complete log : 
+
+    Traceback (most recent call last):
+  File "c:\Users\gshaw\OneDrive\Desktop\M04_Programming\16.8\16.8.py", line 4, in <module>
+    rows = conn.execute(sql)
+           ^^^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'execute'
+
+
+**FIX**
+
+- No fix at this time.
+
+Note : I think it may be having this issue due to it being coded in Python rather than SQL. Not entirely sure.
+    - I tried making the list as well, per the CSV file. Still no luck.
